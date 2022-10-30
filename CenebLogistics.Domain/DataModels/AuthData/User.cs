@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CenebLogistics.Domain.DataModels
+namespace CenebLogistics.Domain.DataModels.AuthData
 {
-  public class DataUser
+  public class User
   {
     [Key]
     public int Id { get; set; }
@@ -29,7 +29,6 @@ namespace CenebLogistics.Domain.DataModels
     public double PhoneNumber { get; set; }
 
 
-
     [Required]
     public DateTime LastLogin { get; set; }
 
@@ -38,6 +37,24 @@ namespace CenebLogistics.Domain.DataModels
     [Required]
     public DateTime JoinedDate { get; set; }
 
-    
+    [Required]
+    public bool IsActive { get; set; }
+
+    [Required]
+    public bool EmailVerified { get; set; }
+
+
+
+    //Relatioship
+
+    public DataUserRoles UserRole { get; set; }
+
+    [Required]
+    public int UserRoleId { get; set; }
+
+
+
+
+
   }
 }
