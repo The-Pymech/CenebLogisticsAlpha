@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CenebLogistics.Domain", "CenebLogistics.Domain\CenebLogistics.Domain.csproj", "{164898A1-3608-4D5D-9498-4C02E689ED5E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CenebLogistics.Application", "CenebLogistics.Application\CenebLogistics.Application.csproj", "{D459CA66-C097-4BF9-9973-8DFEAC516CB5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CenebLogistics.Infrastructure", "CenebLogistics.Infrastructure\CenebLogistics.Infrastructure.csproj", "{C9FAE258-0BB5-4CDA-8293-79148D120F36}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{155960C4-5532-496B-BF22-FAD2E133BE30}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{C3689B27-F72B-4A23-81B0-551E427EF2F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CenebLogistics.MVC", "CenebLogistics.MVC\CenebLogistics.MVC.csproj", "{18ADC371-D8B3-44F3-9E61-E9A24E15DFD1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CenebLogistics.API", "CenebLogistics.API\CenebLogistics.API.csproj", "{F7EC3600-FCBD-4FBF-ADB0-375AF17F8315}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{164898A1-3608-4D5D-9498-4C02E689ED5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{164898A1-3608-4D5D-9498-4C02E689ED5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{164898A1-3608-4D5D-9498-4C02E689ED5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{164898A1-3608-4D5D-9498-4C02E689ED5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D459CA66-C097-4BF9-9973-8DFEAC516CB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D459CA66-C097-4BF9-9973-8DFEAC516CB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D459CA66-C097-4BF9-9973-8DFEAC516CB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D459CA66-C097-4BF9-9973-8DFEAC516CB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9FAE258-0BB5-4CDA-8293-79148D120F36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9FAE258-0BB5-4CDA-8293-79148D120F36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9FAE258-0BB5-4CDA-8293-79148D120F36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9FAE258-0BB5-4CDA-8293-79148D120F36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18ADC371-D8B3-44F3-9E61-E9A24E15DFD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18ADC371-D8B3-44F3-9E61-E9A24E15DFD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18ADC371-D8B3-44F3-9E61-E9A24E15DFD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18ADC371-D8B3-44F3-9E61-E9A24E15DFD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7EC3600-FCBD-4FBF-ADB0-375AF17F8315}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7EC3600-FCBD-4FBF-ADB0-375AF17F8315}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7EC3600-FCBD-4FBF-ADB0-375AF17F8315}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7EC3600-FCBD-4FBF-ADB0-375AF17F8315}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{164898A1-3608-4D5D-9498-4C02E689ED5E} = {155960C4-5532-496B-BF22-FAD2E133BE30}
+		{D459CA66-C097-4BF9-9973-8DFEAC516CB5} = {155960C4-5532-496B-BF22-FAD2E133BE30}
+		{C9FAE258-0BB5-4CDA-8293-79148D120F36} = {155960C4-5532-496B-BF22-FAD2E133BE30}
+		{18ADC371-D8B3-44F3-9E61-E9A24E15DFD1} = {C3689B27-F72B-4A23-81B0-551E427EF2F1}
+		{F7EC3600-FCBD-4FBF-ADB0-375AF17F8315} = {C3689B27-F72B-4A23-81B0-551E427EF2F1}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {32B84A03-D7CA-4620-AC74-0F1D0EA2DBCF}
+	EndGlobalSection
+EndGlobal
