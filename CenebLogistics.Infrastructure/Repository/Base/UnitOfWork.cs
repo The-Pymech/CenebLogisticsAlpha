@@ -33,7 +33,7 @@ namespace CenebLogistics.Infrastructure.Repository.Base
 
     public ICylinderSizeRepository UnitcylinderSizeRepository { get; private set; }
 
-    public ICylinderTypeRepository UnitcylinderTypeRepository { get; private set; }
+    public CylinderTypeRepository UnitcylinderTypeRepository { get; private set; }
 
     public ICylinderVersionRepository UnitcylinderVersionRepository { get; private set; }
 
