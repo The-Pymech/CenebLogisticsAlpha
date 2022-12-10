@@ -35,7 +35,7 @@ namespace CenebLogistics.Domain.DataModels
 
 
 
-    public CylinderSizes CylinderSize { get; set; }
+    public CylinderSize CylinderSize { get; set; }
     public int CylinderSizeId { get; set; }
 
 

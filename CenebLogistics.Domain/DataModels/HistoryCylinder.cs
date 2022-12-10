@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CenebLogistics.Domain.DataModels
 {
-  internal class HistoryCylinder
+  public class HistoryCylinder
   {
 
 
@@ -36,7 +36,7 @@ namespace CenebLogistics.Domain.DataModels
     public int CylinderContentId { get; set; }
 
 
-    public CylinderSizes CylinderSize { get; set; }
+    public CylinderSize CylinderSize { get; set; }
 
     [Required]
     public int CylinderSizeId { get; set; }

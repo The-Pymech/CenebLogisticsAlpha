@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace CenebLogistics.Domain.DataModels
 {
-  public class CylinderSizes : GeneralDataClass
+  public class CylinderSize : GeneralDataClass
   {
     [Key]
     public int Id { get; set; }
