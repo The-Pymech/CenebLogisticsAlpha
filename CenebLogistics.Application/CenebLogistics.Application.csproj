@@ -10,8 +10,4 @@
     <ProjectReference Include="..\CenebLogistics.Domain\CenebLogistics.Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="CenebTasks\" />
-  </ItemGroup>
-
 </Project>
