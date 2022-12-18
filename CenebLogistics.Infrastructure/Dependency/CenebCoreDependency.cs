@@ -1,4 +1,8 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using CenebLogistics.Application.Repository.Base;
+using CenebLogistics.Application.Services.CenebTask;
+using CenebLogistics.Infrastructure.Repository.Base;
+using CenebLogistics.Infrastructure.Services.CenebTask;
+using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,7 +19,9 @@ namespace CenebLogistics.Infrastructure.Dependency
     {
 
 
-
+      services.AddScoped<IUnitOfWork, UnitOfWork>();
+      services.AddScoped<IEmailService, EmailService>();
+      services.AddTransient<ICenebConversions, CenebConversions>();
 
 
 

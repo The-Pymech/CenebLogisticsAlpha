@@ -22,32 +22,32 @@ namespace CenebLogistics.Infrastructure.Repository.Base
       _dbContext = cenebDbContext;
       _logger = loggerFactory.CreateLogger("logs");
 
-      UnitCrewRepository = new CrewRepository(_dbContext,_logger);
+      UnitCrew = new CrewRepository(_dbContext,_logger);
     }
 
 
 
-    public ICrewRepository UnitCrewRepository { get; private set; }
+    public ICrewRepository UnitCrew { get; private set; }
 
-    public ICylinderRepository UnitcylinderRepository { get; private set; }
+    public ICylinderRepository Unitcylinder { get; private set; }
 
-    public ICylinderSizeRepository UnitcylinderSizeRepository { get; private set; }
+    public ICylinderSizeRepository UnitcylinderSize { get; private set; }
 
     public CylinderTypeRepository UnitcylinderTypeRepository { get; private set; }
 
-    public ICylinderVersionRepository UnitcylinderVersionRepository { get; private set; }
+    public ICylinderVersionRepository UnitcylinderVersion { get; private set; }
 
-    public IDataUserRepository UnitdataUserRepository { get; private set; }
+    public IDataUserRepository UnitdataUser { get; private set; }
 
-    public IHistoryCylinderRepository UnithistoryCylinderRepository { get; private set; }
+    public IHistoryCylinderRepository UnithistoryCylinder { get; private set; }
 
-    public ILocationRepository UnitlocationRepository { get; private set; }
+    public ILocationRepository Unitlocation { get; private set; }
 
-    public IStaffRepository UnitstaffRepository { get; private set; }
+    public IStaffRepository Unitstaff { get; private set; }
 
-    public ITransitRepository UnittransitRepository { get; private set; }
+    public ITransitRepository Unittransit { get; private set; }
 
-    public IVehicleRepository UnitvehicleRepository { get; private set; }
+    public IVehicleRepository Unitvehicle { get; private set; }
 
     public async Task CompleteAsync()
     {

@@ -1,17 +1,15 @@
-﻿using CenebLogistics.Domain.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CenebLogistics.Domain.DataModels
+namespace CenebLogistics.Domain.ViewModels.DisplayModels.Forms
 {
-  public class Staff : GeneralDataClass
+  public class StaffForm
   {
-
-    [Key]
+    
     public string Id { get; set; }
 
     [Required]
@@ -23,6 +21,7 @@ namespace CenebLogistics.Domain.DataModels
     [Required]
     public string Description { get; set; }
 
+    
     public string isActive { get; set; }
   }
 }

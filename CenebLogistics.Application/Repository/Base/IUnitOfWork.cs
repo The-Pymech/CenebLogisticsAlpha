@@ -8,21 +8,21 @@ namespace CenebLogistics.Application.Repository.Base
 {
   public interface IUnitOfWork
   {
-    ICrewRepository UnitCrewRepository { get; }
-    ICylinderRepository UnitcylinderRepository { get; }
+    ICrewRepository UnitCrew { get; }
+    ICylinderRepository Unitcylinder { get; }
 
-    ICylinderSizeRepository UnitcylinderSizeRepository { get; }
-    ICylinderTypeRepository UnitcylinderTypeRepository { get; }
-    ICylinderVersionRepository UnitcylinderVersionRepository { get; }
+    ICylinderSizeRepository UnitcylinderSize { get; }
+    ICylinderTypeRepository UnitcylinderType { get; }
+    ICylinderVersionRepository UnitcylinderVersion { get; }
 
-    IDataUserRepository UnitdataUserRepository { get; }
+    IDataUserRepository UnitdataUser { get; }
 
-    IHistoryCylinderRepository UnithistoryCylinderRepository { get; }
-    ILocationRepository UnitlocationRepository { get; }
-    IStaffRepository UnitstaffRepository { get; }
-    ITransitRepository UnittransitRepository { get; }
+    IHistoryCylinderRepository UnithistoryCylinder { get; }
+    ILocationRepository Unitlocation { get; }
+    IStaffRepository Unitstaff { get; }
+    ITransitRepository Unittransit { get; }
 
-    IVehicleRepository UnitvehicleRepository { get; }
+    IVehicleRepository Unitvehicle { get; }
 
     Task CompleteAsync();
 
