@@ -1,4 +1,5 @@
 ﻿using CenebLogistics.Domain.DataModels;
+using CenebLogistics.Domain.ViewModels.DisplayModels;
 using CenebLogistics.Domain.ViewModels.DisplayModels.Lists;
 using System;
 using System.Collections.Generic;
@@ -13,6 +14,6 @@ namespace CenebLogistics.Application.DataConvertion
     Vehicle VehicleListModelToVehicle(VehicleListModel input);
     VehicleListModel VehicleToVehicleListModel(Vehicle input);
 
-
+    VehicleOverview VehicleToVehicleOverview(Vehicle input);
   }
 }

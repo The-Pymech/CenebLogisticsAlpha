@@ -1,4 +1,5 @@
 ﻿using CenebLogistics.Domain.DataModels;
+using CenebLogistics.Domain.ViewModels.DisplayModels;
 using CenebLogistics.Domain.ViewModels.DisplayModels.Lists;
 using System;
 using System.Collections.Generic;
@@ -11,8 +12,11 @@ namespace CenebLogistics.Application.DataConvertion
   public interface ICylinderTypeConvertion
   {
 
-    CylinderType CylinderTypeListModelToCylinderType(CylinderTypeListModel input); 
+    CylinderType CylinderTypeListModelToCylinderType(CylinderTypeListModel input);
 
     CylinderTypeListModel CylinderTypeToCylinderTypeListModel(CylinderType input);
+
+
+    CylinderTypeOverVIew CylinderTypeToCylinderTypeOverVIew(CylinderType input);
   }
 }

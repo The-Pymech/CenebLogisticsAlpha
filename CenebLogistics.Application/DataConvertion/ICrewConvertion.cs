@@ -1,4 +1,5 @@
 ﻿using CenebLogistics.Domain.DataModels;
+using CenebLogistics.Domain.ViewModels.DisplayModels;
 using CenebLogistics.Domain.ViewModels.DisplayModels.Lists;
 using System;
 using System.Collections.Generic;
@@ -14,5 +15,7 @@ namespace CenebLogistics.Application.DataConvertion
     Crew CrewListModelToCrew(CrewListModel input);
 
     CrewListModel CrewToCrewListModel(Crew input);
+
+    StaffOverview CrewToStaffOverView(Crew input);
   }
 }
