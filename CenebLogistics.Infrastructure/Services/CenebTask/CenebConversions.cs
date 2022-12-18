@@ -25,9 +25,13 @@ namespace CenebLogistics.Infrastructure.Services.CenebTask
         IsEmailComfirmed = user.EmailConfirmed
         
       };
-
       return response;
-   
+    }
+
+    public string DateTimeToString(DateTime dateTime)
+    {
+      var stringDate = dateTime.ToString("dddd, dd/MM/yyyy HH:mm");
+      return stringDate;
     }
   }
 }
