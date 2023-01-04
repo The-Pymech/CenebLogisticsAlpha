@@ -24,7 +24,7 @@ namespace CenebLogistics.Domain.DataModels
     public Staff Staff { get; set; }
 
     [Required]
-    public int StaffId { get; set; }
+    public string StaffId { get; set; }
    
   }
 }

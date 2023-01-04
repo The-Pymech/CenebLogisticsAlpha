@@ -8,8 +8,8 @@ namespace CenebLogistics.Domain.ViewModels.DisplayModels
 {
   public class VehicleOverview
   {
-
-    public int VehicleName { get; set; }
+    public int VehileId { get; set; }
+    public string VehicleName { get; set; }
 
     public string DriverName { get; set; }
 

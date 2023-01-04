@@ -27,11 +27,11 @@ namespace CenebLogistics.Domain.ViewModels.DisplayModels.Lists
 
 
     
-    public DateTime LastLogin { get; set; }
+    public string LastLogin { get; set; }
 
 
    
-    public DateTime JoinedDate { get; set; }
+    public string JoinedDate { get; set; }
 
     public bool IsActive { get; set; }
   }

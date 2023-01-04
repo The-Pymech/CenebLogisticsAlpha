@@ -11,13 +11,13 @@ namespace CenebLogistics.Domain.Models
   {
 
     [Required]
-    public int UpdatedById { get; set; }
+    public string UpdatedById { get; set; }
     [Required]
     public DateTime CreatedOn { get; set; }
     [Required]
     public DateTime LastUpdatedOn { get; set; }
     [Required]
-    public int CreatedById { get; set; }
+    public string CreatedById { get; set; }
     [Required]
     public bool isDeleted { get; set; }
   }

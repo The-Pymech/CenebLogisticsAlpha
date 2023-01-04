@@ -11,9 +11,9 @@ namespace CenebLogistics.Application.DataConvertion
 {
   public interface ICylinderSizesConvertion
   {
-    CylinderSize CylinderSizeListModelToCylinderSizes(CylinderListModel input);
+    //CylinderSize CylinderSizeListModelToCylinderSizes(CylinderListModel input);
 
-    CylinderListModel CylinderSizesToCylinderSizeListModel(CylinderSize input);
+    Task<CylinderSizeListModel> CylinderSizesToCylinderSizeListModel(CylinderSize input);
 
     CylinderSizesOverview CylinderSizeToCylinderSizesOverview(CylinderSize input);
 

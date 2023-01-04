@@ -11,10 +11,10 @@ namespace CenebLogistics.Application.DataConvertion
 {
   public interface IStaffConvertion
   {
-    Staff StaffListModelToStaff(StaffListModel input);
+    //Staff StaffListModelToStaff(StaffListModel input);
 
-    StaffListModel StaffToStaffListModel(Staff input);
+    Task<StaffListModel> StaffToStaffListModel(Staff input);
 
-    StaffOverview StaffToStaffOverview(Staff input);
+    Task<StaffOverview> StaffToStaffOverview(Staff input);
   }
 }

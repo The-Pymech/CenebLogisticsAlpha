@@ -33,5 +33,39 @@ namespace CenebLogistics.Infrastructure.Services.CenebTask
       var stringDate = dateTime.ToString("dddd, dd/MM/yyyy HH:mm");
       return stringDate;
     }
+
+    public string FullNameFromuser(DataUser user)
+    {
+      var output = $"{user.LastName} {user.FirstName} {user.MiddleName}";
+      return output;
+    }
+
+    public DateTime GetDateByDaysPast(int daysPast)
+    {
+      var date = DateTime.Today.AddDays(-daysPast);
+      return date;
+    }
+
+    public int GetPercentage(int totalNumber, int specificNumber)
+    {
+      var percentage = (specificNumber / totalNumber) * 100; 
+      return percentage;
+    }
+
+    public int TotalTrasitPerDate(List<Transit> transits, int dayspast)
+    {
+      var startCountDate = this.GetDateByDaysPast(dayspast);
+      var count = 0;
+      foreach (var item in transits)
+      {
+        if (item.Date > startCountDate)
+        {
+          count = count + 1;
+        }
+      }
+
+      return count;
+
+    }
   }
 }

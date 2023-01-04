@@ -11,8 +11,8 @@ namespace CenebLogistics.Application.DataConvertion
   public interface IHistoryCylinderConvertion
   {
 
-    HistoryCylinder HistoryCylinderListModelToHistoryCylinder(HistoryCylinderListModel input);
+    //HistoryCylinder HistoryCylinderListModelToHistoryCylinder(HistoryCylinderListModel input);
 
-    HistoryCylinderListModel HistoryCylinderToHistoryCylinderListModel(HistoryCylinder input);
+    Task<HistoryCylinderListModel> HistoryCylinderToHistoryCylinderListModel(HistoryCylinder input);
   }
 }

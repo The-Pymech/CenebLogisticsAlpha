@@ -12,9 +12,9 @@ namespace CenebLogistics.Application.DataConvertion
   public interface IDataUserConvertion
   {
 
-    DataUser DataUserListModelToDataUser(UsersListModel input);
+    //DataUser DataUserListModelToDataUser(UsersListModel input);
 
-    UsersListModel DataUserToDataUserListModel(DataUser input);
+    Task<UsersListModel> DataUserToDataUserListModel(DataUser input);
 
     LastLoginOverview DataUserToLastLoginOverview(DataUser input);
 

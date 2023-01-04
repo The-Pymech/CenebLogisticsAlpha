@@ -12,9 +12,9 @@ namespace CenebLogistics.Application.DataConvertion
   public interface ICylinderTypeConvertion
   {
 
-    CylinderType CylinderTypeListModelToCylinderType(CylinderTypeListModel input);
+    //CylinderType CylinderTypeListModelToCylinderType(CylinderTypeListModel input);
 
-    CylinderTypeListModel CylinderTypeToCylinderTypeListModel(CylinderType input);
+    Task<CylinderTypeListModel> CylinderTypeToCylinderTypeListModel(CylinderType input);
 
 
     CylinderTypeOverVIew CylinderTypeToCylinderTypeOverVIew(CylinderType input);

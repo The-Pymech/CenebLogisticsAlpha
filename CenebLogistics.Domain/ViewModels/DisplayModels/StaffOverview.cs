@@ -8,7 +8,7 @@ namespace CenebLogistics.Domain.ViewModels.DisplayModels
 {
   public class StaffOverview
   {
-    public int StaffId { get; set; }
+    public string StaffId { get; set; }
 
     public string FullName { get; set; }
 

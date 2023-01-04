@@ -17,7 +17,7 @@ namespace CenebLogistics.Domain.ViewModels.DisplayModels
     [Required]
     public string LastUpdatedOn { get; set; }
     [Required]
-    public int CreatedByFullName { get; set; }
+    public string CreatedByFullName { get; set; }
     [Required]
     public bool isDeleted { get; set; }
   }

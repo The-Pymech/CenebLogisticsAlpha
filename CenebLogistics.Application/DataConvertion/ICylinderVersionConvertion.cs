@@ -12,9 +12,9 @@ namespace CenebLogistics.Application.DataConvertion
   public interface ICylinderVersionConvertion
   {
 
-    CylinderVersion CylinderVersionListModelToCylinderVersion(CylinderVersionListModel input); 
+    //CylinderVersion CylinderVersionListModelToCylinderVersion(CylinderVersionListModel input); 
 
-    CylinderVersionListModel CylinderVersionToCylinderVersionListModel(CylinderVersion input);
+    Task<CylinderVersionListModel> CylinderVersionToCylinderVersionListModel(CylinderVersion input);
 
     CylinderVersionOverview CylinderVersionToCylinderVersionOverview(CylinderVersion input);
   }

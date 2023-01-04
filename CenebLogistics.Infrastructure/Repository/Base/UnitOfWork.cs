@@ -22,7 +22,7 @@ namespace CenebLogistics.Infrastructure.Repository.Base
       _dbContext = cenebDbContext;
       _logger = loggerFactory.CreateLogger("logs");
 
-      UnitCrew = new CrewRepository(_dbContext,_logger);
+      UnitCrew = new CrewRepository(_dbContext, _logger);
     }
 
 
@@ -33,8 +33,9 @@ namespace CenebLogistics.Infrastructure.Repository.Base
 
     public ICylinderSizeRepository UnitcylinderSize { get; private set; }
 
-    public CylinderTypeRepository UnitcylinderTypeRepository { get; private set; }
+    public ICylinderTypeRepository UnitcylinderType { get; private set; }
 
+    public ICylinderContentRepository UnitcylinderContent { get; private set; }
     public ICylinderVersionRepository UnitcylinderVersion { get; private set; }
 
     public IDataUserRepository UnitdataUser { get; private set; }
@@ -61,7 +62,7 @@ namespace CenebLogistics.Infrastructure.Repository.Base
 
     public void Dispose()
     {
-       _dbContext.Dispose();
+      _dbContext.Dispose();
     }
   }
 }

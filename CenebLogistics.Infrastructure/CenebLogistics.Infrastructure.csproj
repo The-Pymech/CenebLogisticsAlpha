@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <Folder Include="CenebTasks\" />
+    <Folder Include="Services\ViewServices\Cylinder\" />
   </ItemGroup>
 
   <ItemGroup>

@@ -8,9 +8,7 @@ using System.Threading.Tasks;
 
 namespace CenebLogistics.Application.Repository
 {
-
-
-  public interface ICylinderSizeRepository : IGenericRepository<CylinderSize, int>
+  public interface ICylinderContentRepository : IGenericRepository<CylinderContent, int>
   {
 
 

@@ -49,5 +49,14 @@ namespace CenebLogistics.Domain.DataModels
 
     [Required]
     public int CylinderVersionId { get; set; }
+
+    public string UpdatedBy { get; set; }
+
+    public DateTime UpdatedOn { get; set; }
+
+ 
+    public Location CurrentLocation { get; set; }
+    public int CurrentLocationId { get; set; }
+
   }
 }

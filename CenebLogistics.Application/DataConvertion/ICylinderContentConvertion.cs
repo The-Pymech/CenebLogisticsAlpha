@@ -12,12 +12,12 @@ namespace CenebLogistics.Application.DataConvertion
   public interface ICylinderContentConvertion
   {
 
-    CylinderContent CylinderToCylinderContent(CylinderContentListModel input);
+    //CylinderContent CylinderToCylinderContent(CylinderContentListModel input);
 
 
-    CylinderContentListModel CylinderContentToCylinder(CylinderContent input);
+    Task<CylinderContentListModel> CylinderContentToCylinder(CylinderContent input);
 
 
-    CylinderContentOverview CylinderContentToCylinderContentOverview(CylinderContent input);
+    Task<CylinderContentOverview> CylinderContentToCylinderContentOverview(CylinderContent input);
   }
 }

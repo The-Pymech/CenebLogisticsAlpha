@@ -11,12 +11,12 @@ namespace CenebLogistics.Application.DataConvertion
 {
   public interface ILocationConvertion
   {
-    Location LocationListModelToLocation(LocationListModel input);
+    //Location LocationListModelToLocation(LocationListModel input);
 
-    LocationListModel LocationToLocationListModel(Location input);
+    Task<LocationListModel> LocationToLocationListModel(Location input);
 
 
 
-    LocationsOverview LocationToLocationsOverview(Location input);
+    Task<LocationsOverview> LocationToLocationsOverview(Location input);
   }
 }

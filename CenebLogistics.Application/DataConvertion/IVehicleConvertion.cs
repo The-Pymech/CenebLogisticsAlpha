@@ -11,9 +11,9 @@ namespace CenebLogistics.Application.DataConvertion
 {
   public interface IVehicleConvertion
   {
-    Vehicle VehicleListModelToVehicle(VehicleListModel input);
-    VehicleListModel VehicleToVehicleListModel(Vehicle input);
+    //Vehicle VehicleListModelToVehicle(VehicleListModel input);
+    Task<VehicleListModel> VehicleToVehicleListModel(Vehicle input);
 
-    VehicleOverview VehicleToVehicleOverview(Vehicle input);
+    Task<VehicleOverview> VehicleToVehicleOverview(Vehicle input);
   }
 }

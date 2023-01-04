@@ -12,10 +12,10 @@ namespace CenebLogistics.Application.DataConvertion
   public interface ITransitConvertion
   {
 
-    Transit TransitListModelToTransit(TransitListModel input);
+    //Transit TransitListModelToTransit(TransitListModel input);
 
-    TransitListModel TransitToTransitListModel(Transit input);
+    Task<TransitListModel> TransitToTransitListModel(Transit input);
 
-    TransitOverview TransitToTransitOverview(Transit input);
+    Task<TransitOverview> TransitToTransitOverview(Transit input);
   }
 }

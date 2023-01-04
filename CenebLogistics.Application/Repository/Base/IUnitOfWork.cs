@@ -14,7 +14,7 @@ namespace CenebLogistics.Application.Repository.Base
     ICylinderSizeRepository UnitcylinderSize { get; }
     ICylinderTypeRepository UnitcylinderType { get; }
     ICylinderVersionRepository UnitcylinderVersion { get; }
-
+    ICylinderContentRepository UnitcylinderContent { get;}
     IDataUserRepository UnitdataUser { get; }
 
     IHistoryCylinderRepository UnithistoryCylinder { get; }

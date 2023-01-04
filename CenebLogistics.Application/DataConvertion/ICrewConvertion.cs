@@ -12,10 +12,10 @@ namespace CenebLogistics.Application.DataConvertion
   public interface ICrewConvertion
   {
 
-    Crew CrewListModelToCrew(CrewListModel input);
+   // Crew CrewListModelToCrew(CrewListModel input);
 
-    CrewListModel CrewToCrewListModel(Crew input);
+    Task<CrewListModel> CrewToCrewListModel(Crew input);
 
-    StaffOverview CrewToStaffOverView(Crew input);
+    
   }
 }
