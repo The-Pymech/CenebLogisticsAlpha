@@ -17,7 +17,7 @@ namespace CenebLogistics.Application.Repository.Base
 
         Task<bool> Add(T entity);
 
-        bool UpdDate(T entity);
+        bool UpdDate(T entity); 
 
        
 

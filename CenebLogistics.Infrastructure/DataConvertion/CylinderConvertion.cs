@@ -2,6 +2,7 @@
 using CenebLogistics.Application.Repository.Base;
 using CenebLogistics.Application.Services.CenebTask;
 using CenebLogistics.Domain.DataModels;
+using CenebLogistics.Domain.ViewModels.DisplayModels.Forms;
 using CenebLogistics.Domain.ViewModels.DisplayModels.Lists;
 using System;
 using System.Collections.Generic;
@@ -56,6 +57,41 @@ namespace CenebLogistics.Infrastructure.DataConvertion
       return output;
     }
 
+    public async Task<Cylinder> FormToData(CylinderForm input, string user)
+    {
+      var databaseUser = await _unitOfWork.UnitdataUser.GetSingle(user);
+      var output = new Cylinder()
+      {
+        Description = input.Description,
+        isDeleted = false,
+        Id = input.Id,
+        UpdatedById = databaseUser.Id,
+        LastUpdatedOn = DateTime.Now,
+        CurrentLocationId = input.CurrentLocationId,
+        CylinderContentId = input.CylinderContentId,
+        CylinderSizeId = input.CylinderSizeId,
+        CylinderTypeId = input.CylinderTypeId,
+        Name = input.Name,
+        CylinderVersionId = input.CylinderVersionId,
+      };
+      return output;
+    }
 
+    public async Task<CylinderForm> GetFormData(int Id)
+    {
+      var input = await _unitOfWork.Unitcylinder.GetSingle(Id);
+      var output = new CylinderForm()
+      {
+        Id = Id,
+        Description = input.Description,
+        CurrentLocationId = input.CurrentLocationId,
+        CylinderContentId = input.CylinderContentId,
+        CylinderSizeId = input.CylinderSizeId,
+        CylinderTypeId = input.CylinderTypeId,
+        CylinderVersionId = input.CylinderVersionId,
+        Name = input.Name
+      };
+      return output;
+    }
   }
 }

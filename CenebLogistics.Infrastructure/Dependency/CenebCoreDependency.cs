@@ -1,5 +1,7 @@
-﻿using CenebLogistics.Application.Repository.Base;
+﻿using CenebLogistics.Application.DataConvertion;
+using CenebLogistics.Application.Repository.Base;
 using CenebLogistics.Application.Services.CenebTask;
+using CenebLogistics.Infrastructure.DataConvertion;
 using CenebLogistics.Infrastructure.Repository.Base;
 using CenebLogistics.Infrastructure.Services.CenebTask;
 using Microsoft.Extensions.DependencyInjection;
@@ -24,6 +26,19 @@ namespace CenebLogistics.Infrastructure.Dependency
       services.AddTransient<ICenebConversions, CenebConversions>();
 
 
+      //Convertions
+      services.AddTransient<ICrewConvertion, CrewConvertion> ();
+      services.AddTransient <ICylinderContentConvertion, CylinderContentConvertion> ();
+      services.AddTransient <ICylinderConvertion, CylinderConvertion> ();
+      services.AddTransient <ICylinderSizesConvertion, CylinderSizesConvertion> ();
+      services.AddTransient <ICylinderTypeConvertion, CylinderTypeConvertion> ();
+      services.AddTransient <ICylinderVersionConvertion, CylinderVersionConvertion> ();
+      services.AddTransient <IDataUserConvertion, DataUserConvertion> ();
+      services.AddTransient <IHistoryCylinderConvertion, HistoryCylinderConvertion> ();
+      services.AddTransient <ILocationConvertion, LocationConvertion> ();
+      services.AddTransient <IStaffConvertion, StaffConvertion> ();
+      services.AddTransient <ITransitConvertion, TransitConvertion> ();
+      services.AddTransient <IVehicleConvertion, VehicleConvertion> ();
 
 
 
